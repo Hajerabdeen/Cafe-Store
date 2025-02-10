@@ -10,23 +10,21 @@
   <title>Document</title>
 </head>
 
-<body>
+<body onload="displayWishlist()">
   <!-- Navbar start -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand fs-1 fw-bold d-flex me-4" href="index.html">
         <img src="img/logo.png" alt="" />
-        <h4 class="custom-font mt-3 fw-bold">Haven Café</h4>
+        <h4 class="custom-font mt-3 fw-bold">Café</h4>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <i class="fa-solid fa-bars fs-3"></i>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav" aria-expanded="false">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html" onclick="setActive(event)">Home</a>
+            <a class="nav-link" href="index.html" onclick="setActive(event)">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="Blog.html" onclick="setActive(event)">Blog</a>
@@ -55,73 +53,15 @@
       </div>
     </div>
   </nav>
-   <!-- Navbar end -->
-  <!-- Slider Start -->
-  <section id="slider">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="slide-container" id="container">
-            <div class="caption" id="slider-caption">
-              <div class="caption-heading">
-                <h1>Lorem Ipsum</h1>
-              </div>
-              <div class="caption-subhead">
-                <span>dolor sit amet, consectetur adipiscing elit.</span>
-              </div>
-            </div>
-            <div class="left-col" id="left-col">
-              <div id="left-slider"></div>
-            </div>
-            <ul class="slide-nav">
-              <li class="slide-up"><a href="#">
-                  < </a>
-              </li>
-              <li class="slide-down"><a id="down_button" href="#">></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Slider End -->
-  <!-- main Header start -->
-  <header class="main-header">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="five">
-            <h1>Our Menu
-            </h1>
-            <span>There is a great variety of drinks available.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- main Header end -->
-  <!-- Product Section start -->
-  <section id="Products">
-    <div class="container mt-5 mb-5 ">
-      <div class="row mt-4" id="products-container">
+  <!-- Navbar end -->
+
+  <section id="wishlist">
+    <div class="container mt-5">
+      <div class="row mt-4" id="wishlist-container">
         <!-- Products will be dynamically inserted here -->
       </div>
     </div>
   </section>
-  <!-- Product Section end -->
-  <header class="main-header mb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="five">
-            <h1>Order Now
-            </h1>
-            <span>available 24 Hours.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
   <!-- Footer Start -->
   <footer class="footer text-light text-center">
     <section class="social-media d-flex justify-content-between">
@@ -166,22 +106,22 @@
             <hr />
             <p>
               <a href="Blog.html" class="footer-link">
-              Blogs
+                Blogs
               </a>
             </p>
             <p>
               <a href="AboutUs.html" class="footer-link">
-              About Us
+                About Us
               </a>
             </p>
             <p>
               <a href="#" class="footer-link">
-              UsingPrivacy
+                UsingPrivacy
               </a>
             </p>
             <p>
               <a href="#" class="footer-link">
-              ItellectualProperty
+                ItellectualProperty
               </a>
             </p>
           </div>
@@ -212,7 +152,6 @@
   <!-- Footer end -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/Navbar.js"></script>
-  <script src="js/Home.js"></script>
+    <script src="js/Home.js"></script>
 </body>
-
 </html>
