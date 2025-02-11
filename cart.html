@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/Home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-1 fw-bold d-flex me-4" href="index.html">
+          <img src="img/logo.png" alt="" />
+          <h4 class="custom-font mt-3 fw-bold">Café</h4>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars fs-3"></i>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+          aria-expanded="false"
+        >
+          <ul class="navbar-nav nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" onclick="setActive(event)"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html" onclick="setActive(event)"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html" onclick="setActive(event)"
+                >About us</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-baseline">
+            <li class="nav-item nav-item-heart">
+              <a class="nav-link fav-link" href="wishList.html">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">
+                <i class="fa-solid fa-cart-shopping me-0"></i>
+              </a>
+            </li>
+            <div>
+              <span class="me-2 fw-bold logout">Sign Up</span>
+              <span class="me-2 fw-bold logout">Sign In</span>
+              <!-- <span class="me-2 fw-bold logout">Logout</span> -->
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Navbar.js"></script>
+  </body>
+</html>
