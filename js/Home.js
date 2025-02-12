@@ -222,20 +222,14 @@ function displayWishlist() {
   });
 }
 
-// إزالة المنتج من صفحة المفضلة
+// remove from wishlist 
 function removeFromWishlist(id) {
   let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
   wishlist = wishlist.filter(product => product.id !== id);
   localStorage.setItem("wishlist", JSON.stringify(wishlist));
-  displayWishlist(); // تحديث العرض بعد الإزالة
+  displayWishlist(); // update display after remove
 }
 
-function removeFromWishlist(id) {
-  let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
-  wishlist = wishlist.filter(product => product.id !== id);
-  localStorage.setItem("wishlist", JSON.stringify(wishlist));
-  displayWishlist();
-}
 function addToCart(productId) {
   alert("Added to cart: " + productId);
 }
